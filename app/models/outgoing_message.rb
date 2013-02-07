@@ -23,7 +23,7 @@
 # Email: francis@mysociety.org; WWW: http://www.mysociety.org/
 
 class OutgoingMessage < ActiveRecord::Base
-    strip_attributes!
+    strip_attributes :allow_empty => true
 
     belongs_to :info_request
     validates_presence_of :info_request

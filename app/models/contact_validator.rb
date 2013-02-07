@@ -16,7 +16,7 @@
 # Email: francis@mysociety.org; WWW: http://www.mysociety.org/
 
 class ContactValidator < ActiveRecord::BaseWithoutTable
-    strip_attributes!
+    strip_attributes :allow_empty => true
 
     column :name, :string
     column :email, :string

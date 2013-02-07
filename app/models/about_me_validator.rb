@@ -13,7 +13,7 @@
 # Email: francis@mysociety.org; WWW: http://www.mysociety.org/
 
 class AboutMeValidator < ActiveRecord::BaseWithoutTable
-    strip_attributes!
+    strip_attributes :allow_empty => true
 
     column :about_me, :text, "I...", false
 

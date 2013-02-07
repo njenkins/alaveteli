@@ -21,7 +21,7 @@
 # Email: francis@mysociety.org; WWW: http://www.mysociety.org/
 
 class Comment < ActiveRecord::Base
-    strip_attributes!
+    strip_attributes :allow_empty => true
 
     belongs_to :user
     #validates_presence_of :user # breaks during construction of new ones :(

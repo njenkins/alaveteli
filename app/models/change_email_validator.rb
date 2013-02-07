@@ -16,7 +16,7 @@
 # Email: francis@mysociety.org; WWW: http://www.mysociety.org/
 
 class ChangeEmailValidator < ActiveRecord::BaseWithoutTable
-    strip_attributes!
+    strip_attributes :allow_empty => true
 
     column :old_email, :string
     column :new_email, :string

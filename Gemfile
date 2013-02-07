@@ -38,6 +38,8 @@ gem 'tmail'
 gem 'globalize3', :git => 'git://github.com/henare/globalize3.git', :branch => 'not-null-empty-attributes'
 gem 'acts_as_versioned'
 gem 'dynamic_form'
+# Use until the 'globalize3' branch is merged upstream. TODO: add PR link here
+gem 'strip_attributes', :git => 'git://github.com/openaustralia/strip_attributes.git', :ref => '01a7215ffe7603f2726cb91b34cde3756f528f7d'
 
 # Gems related to internationalisation
 # Also in vendor/plugins there is globalize2

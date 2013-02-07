@@ -10,7 +10,7 @@ module HasTagString
     # Represents one tag of one model.
     # The migration to make this is currently only in WDTK code.
     class HasTagStringTag < ActiveRecord::Base
-        # XXX strip_attributes!
+        # XXX strip_attributes :allow_empty => true
 
         validates_presence_of :name
 
